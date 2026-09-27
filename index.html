@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasterkhwan | Restaurant</title>
+  <meta name="description" content="Dasterkhwan: traditional dishes served the way they're meant to be shared.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">Dasterkhwan</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#visit">Visit</a></li>
+          <li><a href="#reserve" class="btn btn-small">Reserve</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Welcome to the table</p>
+        <h1>Food made to be shared</h1>
+        <p class="lead">A dasterkhwan is the spread laid out for family and guests. We cook traditional dishes the same way: generous, slow and made to share.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">View menu</a>
+          <a href="#reserve" class="btn btn-outline">Book a table</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Our story</h2>
+          <!-- TODO: replace with the restaurant's real story -->
+          <p>Placeholder copy: tell guests who you are, where the recipes come from, and what makes the kitchen special.</p>
+        </div>
+        <div class="image-placeholder" role="img" aria-label="Restaurant interior photo placeholder">Photo</div>
+      </div>
+    </section>
+
+    <section id="menu" class="section section-alt">
+      <div class="container">
+        <h2 class="center">Signature dishes</h2>
+        <!-- TODO: replace with real menu items and prices -->
+        <div class="card-grid">
+          <article class="card">
+            <h3>Kabuli Pulao</h3>
+            <p>Fragrant rice with tender lamb, carrots and raisins.</p>
+            <span class="price">$—</span>
+          </article>
+          <article class="card">
+            <h3>Mantu</h3>
+            <p>Steamed dumplings with spiced beef, yogurt and lentil sauce.</p>
+            <span class="price">$—</span>
+          </article>
+          <article class="card">
+            <h3>Chapli Kebab</h3>
+            <p>Hand-pressed spiced kebabs, served with naan and chutney.</p>
+            <span class="price">$—</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="section">
+      <div class="container two-col">
+        <div>
+          <h2>Visit us</h2>
+          <!-- TODO: fill in real address, phone and hours -->
+          <p><strong>Address:</strong> 123 Placeholder St, City</p>
+          <p><strong>Phone:</strong> (000) 000-0000</p>
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Mon–Thu</span><span>12:00 – 22:00</span></li>
+            <li><span>Fri–Sat</span><span>12:00 – 23:00</span></li>
+            <li><span>Sun</span><span>13:00 – 21:00</span></li>
+          </ul>
+        </div>
+        <div class="image-placeholder" role="img" aria-label="Map placeholder">Map</div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section section-accent">
+      <div class="container center">
+        <h2>Reserve a table</h2>
+        <p>Book online, or ask our assistant about the menu, hours and dietary needs.</p>
+        <!-- TODO: hook up to a reservation provider or backend -->
+        <a href="#" class="btn btn-light">Book now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Dasterkhwan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AI assistant widget shell: UI only, no backend connected yet -->
+  <button class="chat-launcher" aria-label="Open assistant" aria-expanded="false">Ask us</button>
+  <div class="chat-panel" hidden>
+    <div class="chat-header">
+      <span>Dasterkhwan Assistant</span>
+      <button class="chat-close" aria-label="Close assistant">&times;</button>
+    </div>
+    <div class="chat-messages" aria-live="polite">
+      <div class="msg msg-bot">Salaam! Ask me about the menu, hours or reservations.</div>
+    </div>
+    <form class="chat-form">
+      <input type="text" name="message" placeholder="Type a message…" autocomplete="off" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
